@@ -1,0 +1,273 @@
+[
+  {
+    "code":"1d",
+    "name":"Ace of diamonds",    
+    "value":""
+  },
+  {
+    "code":"1f",
+    "name":"Ace of flowers",    
+    "value":""
+  },
+  {
+    "code":"1h",
+    "name":"Ace of hearts",    
+    "value":""
+  },
+  {
+    "code":"1s",
+    "name":"Ace of spades",    
+    "value":""
+  },
+  
+  {
+    "code":"2d",
+    "name":"Two of diamonds",    
+    "value":""
+  },
+  {
+    "code":"2f",
+    "name":"Two of flowers",    
+    "value":""
+  },
+  {
+    "code":"2h",
+    "name":"Two of hearts",    
+    "value":""
+  },
+  {
+    "code":"2s",
+    "name":"Two of spades",    
+    "value":""
+  },
+
+  {
+    "code":"3d",
+    "name":"Three of diamonds",    
+    "value":""
+  },
+  {
+    "code":"3f",
+    "name":"Three of flowers",    
+    "value":""
+  },
+  {
+    "code":"3h",
+    "name":"Three of hearts",    
+    "value":""
+  },
+  {
+    "code":"3s",
+    "name":"Three of spades",    
+    "value":""
+  },
+
+  {
+    "code":"4d",
+    "name":"Four of diamonds",    
+    "value":""
+  },
+  {
+    "code":"4f",
+    "name":"Four of flowers",    
+    "value":""
+  },
+  {
+    "code":"4h",
+    "name":"Four of hearts",    
+    "value":""
+  },
+  {
+    "code":"4s",
+    "name":"Four of spades",    
+    "value":""
+  },
+
+  {
+    "code":"5d",
+    "name":"Five of diamonds",    
+    "value":""
+  },
+  {
+    "code":"5f",
+    "name":"Five of flowers",    
+    "value":""
+  },
+  {
+    "code":"5h",
+    "name":"Five of hearts",    
+    "value":""
+  },
+  {
+    "code":"5s",
+    "name":"Five of spades",    
+    "value":""
+  },
+
+  {
+    "code":"6d",
+    "name":"Six of diamonds",    
+    "value":""
+  },
+  {
+    "code":"6f",
+    "name":"Six of flowers",    
+    "value":""
+  },
+  {
+    "code":"6h",
+    "name":"Six of hearts",    
+    "value":""
+  },
+  {
+    "code":"6s",
+    "name":"Six of spades",    
+    "value":""
+  },
+
+  {
+    "code":"7d",
+    "name":"Seven of diamonds",    
+    "value":""
+  },
+  {
+    "code":"7f",
+    "name":"Seven of flowers",    
+    "value":""
+  },
+  {
+    "code":"7h",
+    "name":"Seven of hearts",    
+    "value":""
+  },
+  {
+    "code":"7s",
+    "name":"Seven of spades",    
+    "value":""
+  },
+
+  {
+    "code":"8d",
+    "name":"Eight of diamonds",    
+    "value":""
+  },
+  {
+    "code":"8f",
+    "name":"Eight of flowers",    
+    "value":""
+  },
+  {
+    "code":"8h",
+    "name":"Eight of hearts",    
+    "value":""
+  },
+  {
+    "code":"8s",
+    "name":"Eight of spades",    
+    "value":""
+  },
+
+  {
+    "code":"9d",
+    "name":"Nine of diamonds",    
+    "value":""
+  },
+  {
+    "code":"9f",
+    "name":"Nine of flowers",    
+    "value":""
+  },
+  {
+    "code":"9h",
+    "name":"Nine of hearts",    
+    "value":""
+  },
+  {
+    "code":"9s",
+    "name":"Nine of spades",    
+    "value":""
+  },
+
+  {
+    "code":"10d",
+    "name":"Ten of diamonds",    
+    "value":""
+  },
+  {
+    "code":"10f",
+    "name":"Ten of flowers",    
+    "value":""
+  },
+  {
+    "code":"10h",
+    "name":"Ten of hearts",    
+    "value":""
+  },
+  {
+    "code":"10s",
+    "name":"Ten of spades",    
+    "value":""
+  },
+
+  {
+    "code":"jd",
+    "name":"Jack of diamonds",    
+    "value":""
+  },
+  {
+    "code":"jf",
+    "name":"Jack of flowers",    
+    "value":""
+  },
+  {
+    "code":"jh",
+    "name":"Jack of hearts",    
+    "value":""
+  },
+  {
+    "code":"js",
+    "name":"Jack of spades",    
+    "value":""
+  },
+
+  {
+    "code":"qd",
+    "name":"Queen of diamonds",    
+    "value":""
+  },
+  {
+    "code":"qf",
+    "name":"Queen of flowers",    
+    "value":""
+  },
+  {
+    "code":"qh",
+    "name":"Queen of hearts",    
+    "value":""
+  },
+  {
+    "code":"qs",
+    "name":"Queen of spades",    
+    "value":""
+  },
+  {
+    "code":"kd",
+    "name":"King of diamonds",    
+    "value":""
+  },
+  {
+    "code":"kf",
+    "name":"King of flowers",    
+    "value":""
+  },
+  {
+    "code":"kh",
+    "name":"King of hearts",    
+    "value":""
+  },
+  {
+    "code":"ks",
+    "name":"King of spades",    
+    "value":""
+  }
+]

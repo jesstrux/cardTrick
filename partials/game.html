@@ -1,39 +1,43 @@
 <span class="overlay">
 	LOADING....
 </span>
+		
 <div class="row" ng-switch on="roundCount">
 
 <!-- 					CARD GROUPS							 -->
-		
 		<!-- ng-show="$index < 3" -->
-
 		<span ng-switch-when="roundOne">
-			<div class="group" ng-click="switchRounds(1,1)">
-				<center><hr class="mini"><span class="label label-block label-warning"> GROUP 1</span><hr class="mini"></center>
+			<span class="inter">
+				<center>Think of any card among the cards below and click its group.
+				</center>
+				<!-- <center>WHAT GROUP IS YOUR CARD IN NOW?</center> -->
+			</span>
+			<div class="group" ng-click="switchToRoundOne('one',1)">
+				<center><span class="label label-block label-warning"> GROUP 1</span></center>
 				<span ng-repeat="card in cardsCol1" ng-show="$index < 4">
 					<img src="images/cards/{{card.code}}.png" alt="">
 				</span>	    	
 	  		</div>
 
 
-	  		<div class="group" ng-click="switchRounds(1,2)">
-	  			<center><hr class="mini"><span class="label label-block label-primary"> GROUP 2</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundOne('one',2)">
+	  			<center><span class="label label-block label-danger"> GROUP 2</span></center>
 				<span ng-repeat="card in cardsCol1" ng-show="$index >= 4 && $index < 8">
 					<img src="images/cards/{{card.code}}.png" alt="">
 				</span>	    	
 	  		</div>
 	  		
 
-	  		<div class="group" ng-click="switchRounds(1,3)">
-	  			<center><hr class="mini"><span class="label label-block label-default"> GROUP 3</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundOne('one',3)">
+	  			<center><span class="label label-block label-default"> GROUP 3</span></center>
 				<span ng-repeat="card in cardsCol1" ng-show="$index >= 8 && $index < 12">
 					<img src="images/cards/{{card.code}}.png" alt="">
 				</span>	    	
 	  		</div>
 
 
-	  		<div class="group" ng-click="switchRounds(1,4)">
-	  			<center><hr class="mini"><span class="label label-block label-danger"> GROUP 4</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundOne('one',4)">
+	  			<center><span class="label label-block label-primary"> GROUP 4</span></center>
 				<span ng-repeat="card in cardsCol1" ng-show="$index >= 12 && $index < 16">
 					<img src="images/cards/{{card.code}}.png" alt="">
 				</span>	    	
@@ -41,8 +45,13 @@
 		</span>
 
   		<span ng-switch-when="roundTwo">
-  			<div class="group" ng-click="switchRounds(2,1)">
-				<center><hr class="mini"><span class="label label-block label-warning"> GROUP 1</span><hr class="mini"></center>
+  			<span class="inter">
+				<center>
+					What group is your card in now??
+				</center>
+			</span>
+  			<div class="group" ng-click="switchToRoundTwo(2,1)">
+				<center><span class="label label-block label-warning"> GROUP 1</span></center>
 				<span ng-model="cardsCol1">
 					<img src="images/cards/{{cardsCol1[0].code}}.png" alt="">
 					<img src="images/cards/{{cardsCol1[4].code}}.png" alt="">
@@ -51,8 +60,8 @@
 				</span>	    	
 	  		</div>
 
-	  		<div class="group" ng-click="switchRounds(2,2)">
-				<center><hr class="mini"><span class="label label-block label-primary"> GROUP 2</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundTwo(2,2)">
+				<center><span class="label label-block label-danger"> GROUP 2</span></center>
 				<span ng-model="cardsCol1">
 					<img src="images/cards/{{cardsCol1[1].code}}.png" alt="">
 					<img src="images/cards/{{cardsCol1[5].code}}.png" alt="">
@@ -61,8 +70,8 @@
 				</span>	    	
 	  		</div>
 
-	  		<div class="group" ng-click="switchRounds(2,2)">
-				<center><hr class="mini"><span class="label label-block label-default"> GROUP 3</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundTwo(2,3)">
+				<center><span class="label label-block label-default"> GROUP 3</span></center>
 				<span ng-model="cardsCol1">
 					<img src="images/cards/{{cardsCol1[2].code}}.png" alt="">
 					<img src="images/cards/{{cardsCol1[6].code}}.png" alt="">
@@ -71,8 +80,8 @@
 				</span>	    	
 	  		</div>
 
-	  		<div class="group" ng-click="switchRounds(2,2)">
-				<center><hr class="mini"><span class="label label-block label-danger"> GROUP 4</span><hr class="mini"></center>
+	  		<div class="group" ng-click="switchToRoundTwo(2,4)">
+				<center><span class="label label-block label-primary"> GROUP 4</span></center>
 				<span ng-model="cardsCol1">
 					<img src="images/cards/{{cardsCol1[3].code}}.png" alt="">
 					<img src="images/cards/{{cardsCol1[7].code}}.png" alt="">
@@ -83,16 +92,28 @@
 
   		</span>
 
-  		<span class="fillPage" ng-switch-when="roundThree">
-  			<br><br>Your card is...
-  			<img src="images/cards/{{cardsCol1[theCard].code || 'bf2h'}}.png" alt="">
-  			{{cardsCol1[theCard].name || 'Ooooops!! failed to know the card you guessed.'}}
+  		<span ng-switch-when="roundThree">
+  			<span class="inter">
+				<center style="font-size:40px">FOUND IT ;-)</center>
+			</span>
+			<span class="fillPage">
+				Your card is...
+	  			<span class="card-faces" ng-click="switchCardFaces()">
+	  				<span class="card-face card-back-{{front}}">
+	  					<img src="images/cards/{{cardsCol1[theCard].code || 'bf1h'}}.png" alt="">
+	  				</span>
+	  				<span class="card-face card-back-{{back}}">
+	  					<img src="images/cards/bf2v.png" alt="">
+	  				</span>
+	  			</span>
+	  			<span ng-hide="back">Click card to see</span>
+	  			<span ng-show="back">
+	  				{{cardsCol1[theCard].name || 'Ooooops!! failed to know the card you guessed.'}}
+	  				<hr>
+	  				<span class="bn btn-lg btn-primary">RESART</span>
+	  			</span>
+			</span>
   		</span>
 
 <!-- 				 END CARD GROUPS						  -->  
 </div>
-
-
-<!-- <div style="padding:7px;">
-	<span class="btn btn-large btn-success pull-right" style="font-size:19px;">&nbsp;&nbsp;PLAY&nbsp;&nbsp;</span>
-</div> -->
