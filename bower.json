@@ -1,0 +1,17 @@
+{
+  "name": "cardsGame",
+  "version": "0.0.0",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "WALTER KIMARO"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-route": "~1.3.14",
+    "bootstrap": "~3.3.2"
+  }
+}
